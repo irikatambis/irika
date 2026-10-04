@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Irika Riva</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <div id="header"></div>
+
+
+    <!-- ================= HOME / HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <!-- Background Shapes -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+
+
+            <div class="hero-container">
+
+
+                <!-- LEFT SIDE -->
+
+                <div class="hero-content">
+
+                    <p class="hero-small-title">
+                        YOUR BUSINESS, SUPPORTED BEHIND THE SCENES.
+                    </p>
+
+
+                    <h1>
+                        Reliable Remote Support
+                        <br>
+                        for Growing Businesses.
+                    </h1>
+
+
+                    <div class="hero-services">
+
+                        <span>Executive Assistant</span>
+
+                        <b>|</b>
+
+                        <span>Virtual Assistant</span>
+
+                        <b>|</b>
+
+                        <span>DM Appointment Setter</span>
+
+                        <b>|</b>
+
+                        <span>Cold Caller</span>
+
+                    </div>
+
+
+                    <p class="hero-description">
+
+                        I help business owners and teams stay organized,
+                        keep up with leads, manage appointments, and handle
+                        the day-to-day tasks that keep their business moving.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="hero-buttons">
+
+                        <a href="contact.html" class="primary-btn">
+                            WORK WITH ME
+                            <span>→</span>
+                        </a>
+
+
+                        <a href="services.html" class="secondary-btn">
+                            EXPLORE SERVICES
+                        </a>
+
+                    </div>
+
+
+                    <!-- Availability -->
+
+                    <div class="availability">
+
+                        <span class="globe">
+                            ◎
+                        </span>
+
+                        Available for remote opportunities worldwide.
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+
+                <div class="hero-image-area">
+
+
+                    <!-- Greeting -->
+
+                    <div class="greeting">
+
+                        <span>Hi, I'm</span>
+
+                        <strong>Irika</strong>
+
+                        <span class="heart">
+                            ♡
+                        </span>
+
+                    </div>
+
+
+                    <!-- Person -->
+
+                    <div class="person-image">
+
+                        <img
+                            src="Img/image.jpg"
+                            alt="Irika Riva"
+                        >
+
+                    </div>
+
+
+                    <!-- Side Message -->
+
+                    <div class="side-message">
+
+                        <p>
+                            Let's make<br>
+                            your business<br>
+                            run smoother!
+                        </p>
+
+                        <div class="side-heart">
+                            ♡
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= LOAD HEADER ================= -->
+
+    <script>
+
+        fetch("HTML/header.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+                // Mobile menu
+                const menuToggle =
+                    document.getElementById("menuToggle");
+
+                const navMenu =
+                    document.querySelector(".nav-menu");
+
+                menuToggle.addEventListener("click", () => {
+                    navMenu.classList.toggle("active");
+                });
+
+            })
+            .catch(error => {
+                console.error("Error loading header:", error);
+            });
+
+    </script>
+
+</body>
+
+</html>
+```

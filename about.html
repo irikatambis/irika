@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Irika Riva</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" href="CSS/about.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <div id="header"></div>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <main>
+
+        <section class="about-section">
+
+            <div class="about-container">
+
+
+                <!-- ================= PHOTO ================= -->
+
+                <div class="about-photo">
+
+                    <img
+                        src="images/your-photo.png"
+                        alt="Irika Riva"
+                    >
+
+                </div>
+
+
+                <!-- ================= ABOUT CONTENT ================= -->
+
+                <div class="about-content">
+
+                    <p class="about-label">
+                        ABOUT ME
+                    </p>
+
+                    <h1>
+                        More Than Just<br>
+                        an Extra Set of Hands.
+                    </h1>
+
+                    <p>
+                        Hi, I'm Irika — a Virtual Assistant from the Philippines
+                        with experience supporting online businesses through
+                        administrative assistance, appointment setting, lead
+                        generation, customer communication, and operations support.
+                    </p>
+
+                    <p>
+                        I'm organized, dependable, willing to learn, and comfortable
+                        adapting to different systems and workflows. My goal is to
+                        help take some of the load off your plate so you can focus
+                        on what matters most — growing your business.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= WHAT I BRING ================= -->
+
+                <div class="what-i-bring">
+
+                    <div class="bring-header">
+
+                        <p>
+                            WHAT I BRING
+                        </p>
+
+                    </div>
+
+
+                    <!-- Reliability -->
+
+                    <div class="bring-item">
+
+                        <div class="number">
+                            01
+                        </div>
+
+                        <div class="bring-text">
+
+                            <h3>
+                                Reliability
+                            </h3>
+
+                            <p>
+                                You can count on me to take ownership
+                                of assigned tasks and keep things moving.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Organization -->
+
+                    <div class="bring-item">
+
+                        <div class="number">
+                            02
+                        </div>
+
+                        <div class="bring-text">
+
+                            <h3>
+                                Organization
+                            </h3>
+
+                            <p>
+                                I keep schedules, leads, records, and daily
+                                tasks properly tracked.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Communication -->
+
+                    <div class="bring-item">
+
+                        <div class="number">
+                            03
+                        </div>
+
+                        <div class="bring-text">
+
+                            <h3>
+                                Communication
+                            </h3>
+
+                            <p>
+                                I communicate professionally with clients,
+                                leads, and team members.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Adaptability -->
+
+                    <div class="bring-item">
+
+                        <div class="number">
+                            04
+                        </div>
+
+                        <div class="bring-text">
+
+                            <h3>
+                                Adaptability
+                            </h3>
+
+                            <p>
+                                Every business works differently. I'm
+                                comfortable learning your systems and processes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= LOAD HEADER ================= -->
+
+    <script>
+
+        fetch("HTML/header.html")
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+
+                // Mobile menu
+
+                const menuToggle =
+                    document.getElementById("menuToggle");
+
+                const navMenu =
+                    document.querySelector(".nav-menu");
+
+
+                if (menuToggle && navMenu) {
+
+                    menuToggle.addEventListener("click", () => {
+
+                        navMenu.classList.toggle("active");
+
+                    });
+
+                }
+
+            })
+
+            .catch(error => {
+
+                console.error(
+                    "Error loading header:",
+                    error
+                );
+
+            });
+
+    </script>
+
+</body>
+
+</html>

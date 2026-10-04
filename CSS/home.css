@@ -1,0 +1,751 @@
+/* =========================================
+   HOME / HERO
+========================================= */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    min-height: calc(100vh - 78px);
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            110deg,
+            #eaf8ff 0%,
+            #f5f9ff 32%,
+            #fff3fa 67%,
+            #eaf8ff 100%
+        );
+}
+
+
+/* =========================================
+   HERO CONTAINER
+========================================= */
+
+.hero-container {
+
+    width: 100%;
+    max-width: 1350px;
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    padding: 50px 60px;
+
+    display: grid;
+
+    grid-template-columns: 52% 48%;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    padding-bottom: 20px;
+}
+
+
+/* Small heading */
+
+.hero-small-title {
+
+    margin-bottom: 17px;
+
+    color: #263c50;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+
+    margin: 0 0 18px;
+
+    color: #17334c;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        42px,
+        4.1vw,
+        65px
+    );
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.hero-services {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #273e51;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.hero-services b {
+
+    font-weight: 400;
+
+    color: #718394;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+    color: #334b5e;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Primary button */
+
+.primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 208px;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    background: #173f60;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .3px;
+
+    transition: .3s ease;
+}
+
+.primary-btn span {
+
+    font-size: 17px;
+}
+
+.primary-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(23, 63, 96, .2);
+}
+
+
+/* Secondary button */
+
+.secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 210px;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    border: 1.5px solid #173f60;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        .35
+    );
+
+    color: #173f60;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.secondary-btn:hover {
+
+    background: #173f60;
+
+    color: white;
+}
+
+
+/* =========================================
+   AVAILABILITY
+========================================= */
+
+.availability {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #31495c;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+.globe {
+
+    width: 21px;
+
+    height: 21px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1.5px solid #31495c;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.hero-image-area {
+
+    position: relative;
+
+    height: 600px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   PERSON IMAGE
+========================================= */
+
+.person-image {
+
+    position: absolute;
+
+    right: 65px;
+
+    bottom: 0;
+
+    width: 520px;
+
+    height: 600px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    z-index: 3;
+}
+
+.person-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter:
+        drop-shadow(
+            0 15px 25px
+            rgba(45, 62, 75, .12)
+        );
+}
+
+
+/* =========================================
+   GREETING
+========================================= */
+
+.greeting {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 80px;
+
+    z-index: 6;
+
+    transform: rotate(-7deg);
+
+    color: #243b50;
+
+    font-family: "Kalam", cursive;
+
+    font-size: 29px;
+
+    line-height: 1;
+}
+
+.greeting strong {
+
+    display: block;
+
+    margin-left: 20px;
+
+    font-size: 38px;
+
+    font-weight: 400;
+}
+
+.greeting .heart {
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: -5px;
+
+    color: #dd6d9d;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   SIDE MESSAGE
+========================================= */
+
+.side-message {
+
+    position: absolute;
+
+    right: -10px;
+
+    top: 160px;
+
+    z-index: 6;
+
+    transform: rotate(-7deg);
+
+    color: #30485b;
+
+    font-family: "Kalam", cursive;
+
+    text-align: center;
+}
+
+.side-message p {
+
+    margin: 0;
+
+    font-size: 19px;
+
+    line-height: 1.25;
+}
+
+.side-heart {
+
+    margin-top: 4px;
+
+    font-size: 36px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   BACKGROUND SHAPES
+========================================= */
+
+.shape {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Pink */
+
+.shape-1 {
+
+    width: 430px;
+
+    height: 430px;
+
+    right: 250px;
+
+    top: 80px;
+
+    background:
+        rgba(
+            248,
+            177,
+            210,
+            .20
+        );
+}
+
+
+/* Blue */
+
+.shape-2 {
+
+    width: 300px;
+
+    height: 180px;
+
+    right: -20px;
+
+    bottom: 30px;
+
+    background:
+        rgba(
+            91,
+            191,
+            238,
+            .18
+        );
+
+    transform: rotate(-15deg);
+}
+
+
+/* Pink lower */
+
+.shape-3 {
+
+    width: 260px;
+
+    height: 150px;
+
+    right: 400px;
+
+    bottom: -50px;
+
+    background:
+        rgba(
+            239,
+            139,
+            183,
+            .16
+        );
+
+    transform: rotate(-20deg);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .hero-container {
+
+        padding: 40px 35px;
+
+        grid-template-columns:
+            55% 45%;
+    }
+
+    .person-image {
+
+        right: 0;
+
+        width: 440px;
+    }
+
+    .greeting {
+
+        left: -10px;
+    }
+
+    .side-message {
+
+        right: -25px;
+    }
+
+    .hero h1 {
+
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .hero {
+
+        min-height: auto;
+    }
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        padding:
+            70px 25px 0;
+
+        text-align: center;
+    }
+
+    .hero-content {
+
+        padding-bottom: 40px;
+    }
+
+    .hero-small-title {
+
+        font-size: 11px;
+    }
+
+    .hero h1 {
+
+        font-size: 45px;
+    }
+
+    .hero-services {
+
+        justify-content: center;
+    }
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .availability {
+
+        justify-content: center;
+    }
+
+    .hero-image-area {
+
+        height: 520px;
+    }
+
+    .person-image {
+
+        right: 50%;
+
+        transform:
+            translateX(50%);
+
+        width: 430px;
+
+        height: 520px;
+    }
+
+    .greeting {
+
+        left: 12%;
+
+        top: 55px;
+    }
+
+    .side-message {
+
+        right: 10%;
+
+        top: 130px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .hero-container {
+
+        padding:
+            50px 20px 0;
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-services {
+
+        font-size: 12px;
+
+        gap: 6px;
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .hero-image-area {
+
+        height: 430px;
+    }
+
+    .person-image {
+
+        width: 350px;
+
+        height: 430px;
+    }
+
+    .greeting {
+
+        left: 0;
+
+        top: 50px;
+
+        font-size: 22px;
+    }
+
+    .greeting strong {
+
+        font-size: 30px;
+    }
+
+    .side-message {
+
+        right: -5px;
+
+        top: 100px;
+    }
+
+    .side-message p {
+
+        font-size: 15px;
+    }
+
+    .side-heart {
+
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,378 @@
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #ffffff;
+    color: #26384a;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 6%;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.about-container {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        210px
+        1fr
+        380px;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+.about-photo {
+    width: 210px;
+    height: 300px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    background: #f4dce7;
+}
+
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   ABOUT CONTENT
+===================================================== */
+
+.about-content {
+    max-width: 500px;
+}
+
+
+.about-label {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #7890a2;
+
+    margin-bottom: 7px;
+}
+
+
+.about-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 31px;
+
+    line-height: 1.05;
+
+    color: #294258;
+
+    margin-bottom: 18px;
+}
+
+
+.about-content p:not(.about-label) {
+    font-size: 12.5px;
+
+    line-height: 1.55;
+
+    color: #4c5963;
+
+    margin-bottom: 15px;
+
+    max-width: 490px;
+}
+
+
+/* =====================================================
+   WHAT I BRING
+===================================================== */
+
+.what-i-bring {
+
+    width: 100%;
+
+    background: #fbeaf2;
+
+    border-radius: 10px;
+
+    padding: 18px 22px 16px;
+
+    min-height: 300px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.bring-header p {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #394b5b;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   BRING ITEM
+===================================================== */
+
+.bring-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 12px;
+}
+
+
+.bring-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.number {
+
+    flex-shrink: 0;
+
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #df75a7;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.bring-text {
+    padding-top: 1px;
+}
+
+
+.bring-text h3 {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #344b5d;
+
+    margin-bottom: 2px;
+}
+
+
+.bring-text p {
+
+    font-size: 10px;
+
+    line-height: 1.35;
+
+    color: #59636b;
+
+    max-width: 255px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .about-section {
+        padding: 60px 5%;
+    }
+
+
+    .about-container {
+
+        grid-template-columns:
+            190px
+            1fr;
+
+        gap: 30px;
+    }
+
+
+    .about-photo {
+
+        width: 190px;
+        height: 275px;
+    }
+
+
+    .what-i-bring {
+
+        grid-column: 1 / -1;
+
+        max-width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .about-section {
+
+        padding: 45px 25px;
+
+        min-height: auto;
+    }
+
+
+    .about-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    .about-photo {
+
+        width: 190px;
+
+        height: 260px;
+    }
+
+
+    .about-content {
+
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    .about-content h1 {
+
+        font-size: 28px;
+    }
+
+
+    .about-content p:not(.about-label) {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    .what-i-bring {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .about-section {
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    .about-photo {
+
+        width: 170px;
+        height: 240px;
+    }
+
+
+    .about-content h1 {
+
+        font-size: 25px;
+    }
+
+}
