@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home | Irika Riva</title>
+    <title>Irika Riva | Virtual Assistant</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,42 +14,74 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <!-- Index CSS -->
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/style.css">
-
+    <!-- CSS Files -->
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/index.css">
+<link rel="stylesheet" href="CSS/about.css">
+<link rel="stylesheet" href="CSS/services.css">
+<link rel="stylesheet" href="CSS/experience.css">
+<link rel="stylesheet" href="CSS/tools.css">
+<link rel="stylesheet" href="CSS/why-faq.css">
+<link rel="stylesheet" href="CSS/contact.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= HEADER / NAVIGATION ================= -->
 
-    <div id="header"></div>
+    <header class="header">
+        <div class="navbar">
 
+            <a href="#home" class="logo">
+                <div class="logo-name">♡ IRIKA RIVA ♡</div>
+                <span>VIRTUAL ASSISTANT</span>
+            </a>
 
-    <!-- ================= HOME / HERO ================= -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#tools">Tools</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="cta-button">
+                LET'S WORK TOGETHER <span>→</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
 
     <main>
 
-        <section class="hero">
+        <!-- ================= HOME / HERO ================= -->
 
-            <!-- Background Shapes -->
+        <section class="hero" id="home">
+
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
 
-
             <div class="hero-container">
 
-
                 <!-- LEFT SIDE -->
-
                 <div class="hero-content">
 
                     <p class="hero-small-title">
                         YOUR BUSINESS, SUPPORTED BEHIND THE SCENES.
                     </p>
-
 
                     <h1>
                         Reliable Remote Support
@@ -59,153 +89,729 @@
                         for Growing Businesses.
                     </h1>
 
-
                     <div class="hero-services">
-
                         <span>Executive Assistant</span>
-
                         <b>|</b>
-
                         <span>Virtual Assistant</span>
-
                         <b>|</b>
-
                         <span>DM Appointment Setter</span>
-
                         <b>|</b>
-
                         <span>Cold Caller</span>
-
                     </div>
 
-
                     <p class="hero-description">
-
                         I help business owners and teams stay organized,
                         keep up with leads, manage appointments, and handle
                         the day-to-day tasks that keep their business moving.
-
                     </p>
 
-
-                    <!-- Buttons -->
-
                     <div class="hero-buttons">
-
-                        <a href="contact.html" class="primary-btn">
-                            WORK WITH ME
-                            <span>→</span>
+                        <a href="#contact" class="primary-btn">
+                            WORK WITH ME <span>→</span>
                         </a>
 
-
-                        <a href="services.html" class="secondary-btn">
+                        <a href="#services" class="secondary-btn">
                             EXPLORE SERVICES
                         </a>
-
                     </div>
 
-
-                    <!-- Availability -->
-
                     <div class="availability">
-
-                        <span class="globe">
-                            ◎
-                        </span>
-
+                        <span class="globe">◎</span>
                         Available for remote opportunities worldwide.
-
                     </div>
 
                 </div>
 
-
                 <!-- RIGHT SIDE -->
-
                 <div class="hero-image-area">
 
-
-                    <!-- Greeting -->
-
                     <div class="greeting">
-
                         <span>Hi, I'm</span>
-
                         <strong>Irika</strong>
-
-                        <span class="heart">
-                            ♡
-                        </span>
-
+                        <span class="heart">♡</span>
                     </div>
-
-
-                    <!-- Person -->
 
                     <div class="person-image">
-
-                        <img
-                            src="Img/image.jpg"
-                            alt="Irika Riva"
-                        >
-
+                        <img src="Img/image.jpg" alt="Irika Riva">
                     </div>
 
-
-                    <!-- Side Message -->
-
                     <div class="side-message">
-
                         <p>
                             Let's make<br>
                             your business<br>
                             run smoother!
                         </p>
-
-                        <div class="side-heart">
-                            ♡
-                        </div>
-
+                        <div class="side-heart">♡</div>
                     </div>
 
                 </div>
 
             </div>
-
         </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+                <!-- PHOTO -->
+                <div class="about-photo">
+                    <img src="images/your-photo.png" alt="Irika Riva">
+                </div>
+
+                <!-- ABOUT CONTENT -->
+                <div class="about-content">
+
+                    <p class="about-label">ABOUT ME</p>
+
+                    <h2>
+                        More Than Just<br>
+                        an Extra Set of Hands.
+                    </h2>
+
+                    <p>
+                        Hi, I'm Irika — a Virtual Assistant from the Philippines
+                        with experience supporting online businesses through
+                        administrative assistance, appointment setting, lead
+                        generation, customer communication, and operations support.
+                    </p>
+
+                    <p>
+                        I'm organized, dependable, willing to learn, and comfortable
+                        adapting to different systems and workflows. My goal is to
+                        help take some of the load off your plate so you can focus
+                        on what matters most — growing your business.
+                    </p>
+
+                </div>
+
+                <!-- WHAT I BRING -->
+                <div class="what-i-bring">
+
+                    <div class="bring-header">
+                        <p>WHAT I BRING</p>
+                    </div>
+
+                    <div class="bring-item">
+                        <div class="number">01</div>
+                        <div class="bring-text">
+                            <h3>Reliability</h3>
+                            <p>
+                                You can count on me to take ownership
+                                of assigned tasks and keep things moving.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bring-item">
+                        <div class="number">02</div>
+                        <div class="bring-text">
+                            <h3>Organization</h3>
+                            <p>
+                                I keep schedules, leads, records, and daily
+                                tasks properly tracked.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bring-item">
+                        <div class="number">03</div>
+                        <div class="bring-text">
+                            <h3>Communication</h3>
+                            <p>
+                                I communicate professionally with clients,
+                                leads, and team members.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bring-item">
+                        <div class="number">04</div>
+                        <div class="bring-text">
+                            <h3>Adaptability</h3>
+                            <p>
+                                Every business works differently. I'm
+                                comfortable learning your systems and processes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SERVICES SECTION ================= -->
+
+        <section class="services-section" id="services">
+
+            <div class="services-heading">
+
+                <p class="services-label">SERVICES</p>
+
+                <h2>Support That Adapts to Your Business.</h2>
+
+                <p class="services-intro">
+                    You don't always need another full department.
+                    Sometimes, you just need the right person to help you
+                    keep everything moving.
+                </p>
+
+            </div>
+
+            <div class="services-container">
+
+                <!-- SERVICE CARD 1 -->
+                <div class="service-card blue-card">
+
+                    <div class="service-icon">▣</div>
+
+                    <h3>Executive &amp; Administrative Support</h3>
+
+                    <p class="service-description">
+                        For founders and teams who need help staying organized.
+                    </p>
+
+                    <ul>
+                        <li>Calendar &amp; appointment management</li>
+                        <li>Scheduling across time zones</li>
+                        <li>Data entry &amp; document organization</li>
+                        <li>Reports &amp; EOD updates</li>
+                        <li>Google Workspace support</li>
+                        <li>Customer communication</li>
+                        <li>Team coordination</li>
+                    </ul>
+
+                    <a href="#contact" class="service-button blue-button">
+                        NEED ADMIN SUPPORT →
+                    </a>
+
+                </div>
+
+                <!-- SERVICE CARD 2 -->
+                <div class="service-card pink-card">
+
+                    <div class="service-icon pink-icon">◎</div>
+
+                    <h3>DM Appointment Setting</h3>
+
+                    <p class="service-description">
+                        For businesses that want to turn conversations into opportunities.
+                    </p>
+
+                    <ul>
+                        <li>Instagram DM outreach</li>
+                        <li>Inbound &amp; outbound follow-ups</li>
+                        <li>Lead qualification &amp; nurturing</li>
+                        <li>Appointment booking</li>
+                        <li>No-show follow-ups</li>
+                        <li>CRM updates &amp; lead tracking</li>
+                    </ul>
+
+                    <a href="#contact" class="service-button pink-button">
+                        NEED A DM SETTER? →
+                    </a>
+
+                </div>
+
+                <!-- SERVICE CARD 3 -->
+                <div class="service-card blue-card">
+
+                    <div class="service-icon">☎</div>
+
+                    <h3>Cold Calling &amp; Lead Generation</h3>
+
+                    <p class="service-description">
+                        For businesses that need someone comfortable talking to prospects.
+                    </p>
+
+                    <ul>
+                        <li>Outbound cold calls</li>
+                        <li>Prospect qualification</li>
+                        <li>Needs assessment</li>
+                        <li>Appointment setting</li>
+                        <li>Objection handling</li>
+                        <li>Follow-ups &amp; CRM notes</li>
+                        <li>Sales team handoffs</li>
+                    </ul>
+
+                    <a href="#contact" class="service-button blue-button">
+                        LET'S TALK LEADS →
+                    </a>
+
+                </div>
+
+                <!-- SERVICE CARD 4 -->
+                <div class="service-card pink-card">
+
+                    <div class="service-icon pink-icon">♧</div>
+
+                    <h3>Operations &amp; Customer Support</h3>
+
+                    <p class="service-description">
+                        Because the work behind the scenes matters too.
+                    </p>
+
+                    <ul>
+                        <li>Customer follow-ups</li>
+                        <li>Scheduling coordination</li>
+                        <li>Dispatch support &amp; job tracking</li>
+                        <li>Technician coordination</li>
+                        <li>Social media support</li>
+                        <li>Zoom replay management</li>
+                        <li>Google Drive &amp; Kajabi uploads</li>
+                        <li>Daily reporting</li>
+                    </ul>
+
+                    <a href="#contact" class="service-button pink-button">
+                        GET SUPPORT →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="experience-section" id="experience">
+
+    <div class="experience-container">
+
+        <!-- Section Heading -->
+        <div class="experience-heading">
+            <p class="experience-label">MY EXPERIENCE</p>
+            <h2>Experience That Goes Beyond One Role.</h2>
+        </div>
+
+        <!-- Experience Cards -->
+        <div class="experience-grid">
+
+            <!-- Appointment Setting -->
+            <article class="experience-card">
+                <div class="experience-icon">▣</div>
+                <h3>Appointment Setting</h3>
+                <ul>
+                    <li>Lead follow-ups &amp; customer conversations</li>
+                    <li>Qualification &amp; appointment booking</li>
+                    <li>Reminders &amp; CRM updates</li>
+                    <li>Sales team handoffs</li>
+                </ul>
+            </article>
+
+            <!-- Virtual Assistance -->
+            <article class="experience-card">
+                <div class="experience-icon">▦</div>
+                <h3>Virtual Assistance</h3>
+                <ul>
+                    <li>Calendar management</li>
+                    <li>Expert calls across time zones</li>
+                    <li>Reports &amp; online communications</li>
+                    <li>Zoom replays, Drive &amp; Kajabi uploads</li>
+                    <li>Daily EOD reporting</li>
+                </ul>
+            </article>
+
+            <!-- Cold Calling -->
+            <article class="experience-card">
+                <div class="experience-icon">♧</div>
+                <h3>Cold Calling</h3>
+                <ul>
+                    <li>Outbound calls to homeowners</li>
+                    <li>Project needs qualification</li>
+                    <li>Objection handling</li>
+                    <li>Appointment scheduling</li>
+                </ul>
+            </article>
+
+            <!-- Dispatcher -->
+            <article class="experience-card">
+                <div class="experience-icon">▣</div>
+                <h3>Dispatcher</h3>
+                <ul>
+                    <li>Technician scheduling</li>
+                    <li>Customer communication</li>
+                    <li>Job tracking (Workiz)</li>
+                    <li>Dispatch operations</li>
+                </ul>
+            </article>
+
+            <!-- Online Support -->
+            <article class="experience-card">
+                <div class="experience-icon">▧</div>
+                <h3>Online Support</h3>
+                <ul>
+                    <li>Social media management</li>
+                    <li>Comment monitoring</li>
+                    <li>Customer inquiries</li>
+                    <li>Chat support</li>
+                </ul>
+            </article>
+
+            <!-- Data Entry -->
+            <article class="experience-card">
+                <div class="experience-icon">▦</div>
+                <h3>Data Entry</h3>
+                <ul>
+                    <li>Large-volume data entry</li>
+                    <li>Excel spreadsheets</li>
+                    <li>Reporting &amp; organization</li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ================= TOOLS SECTION ================= -->
+
+<section class="tools-section" id="tools">
+
+    <div class="tools-container">
+
+        <!-- Heading -->
+        <div class="tools-heading">
+            <p class="tools-label">TOOLS I WORK WITH</p>
+            <h2>The Right Tools for the Job.</h2>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-grid">
+
+            <!-- Instagram -->
+            <div class="tool-item">
+                <div class="tool-icon instagram">
+                    <img src="https://cdn.simpleicons.org/instagram/E4405F"
+                         alt="Instagram">
+                </div>
+                <p>Instagram</p>
+            </div>
+
+            <!-- Airtable -->
+            <div class="tool-item">
+                <div class="tool-icon airtable">
+                    <img src="https://cdn.simpleicons.org/airtable/18BFFF"
+                         alt="Airtable">
+                </div>
+                <p>Airtable</p>
+            </div>
+
+            <!-- Zoho -->
+            <div class="tool-item">
+                <div class="tool-icon zoho">
+                    <img src="https://cdn.simpleicons.org/zoho/E42527"
+                         alt="Zoho">
+                </div>
+                <p>Zoho</p>
+            </div>
+
+            <!-- GoHighLevel -->
+            <div class="tool-item">
+                <div class="tool-icon highlevel">
+                    <img src="https://cdn.simpleicons.org/gohighlevel/188BF6"
+                         alt="GoHighLevel">
+                </div>
+                <p>GoHighLevel</p>
+            </div>
+
+            <!-- Notion -->
+            <div class="tool-item">
+                <div class="tool-icon notion">
+                    <img src="https://cdn.simpleicons.org/notion/000000"
+                         alt="Notion">
+                </div>
+                <p>Notion</p>
+            </div>
+
+            <!-- Calendly -->
+            <div class="tool-item">
+                <div class="tool-icon calendly">
+                    <img src="https://cdn.simpleicons.org/calendly/006BFF"
+                         alt="Calendly">
+                </div>
+                <p>Calendly</p>
+            </div>
+
+            <!-- Google Workspace -->
+            <div class="tool-item">
+                <div class="tool-icon google">
+                    <img src="https://cdn.simpleicons.org/google/4285F4"
+                         alt="Google">
+                </div>
+                <p>Google Workspace</p>
+            </div>
+
+            <!-- Google Drive -->
+            <div class="tool-item">
+                <div class="tool-icon drive">
+                    <img src="https://cdn.simpleicons.org/googledrive/34A853"
+                         alt="Google Drive">
+                </div>
+                <p>Google Drive</p>
+            </div>
+
+            <!-- Excel -->
+            <div class="tool-item">
+                <div class="tool-icon excel">
+                    <img src="https://cdn.simpleicons.org/microsoftexcel/217346"
+                         alt="Microsoft Excel">
+                </div>
+                <p>Excel</p>
+            </div>
+
+            <!-- Workiz -->
+            <div class="tool-item">
+                <div class="tool-icon workiz">
+                    <img src="https://cdn.simpleicons.org/zapier/FF4A00"
+                         alt="Workiz">
+                </div>
+                <p>Workiz</p>
+            </div>
+
+            <!-- Kajabi -->
+            <div class="tool-item">
+                <div class="tool-icon kajabi">
+                    <img src="https://cdn.simpleicons.org/kajabi/2D2D2D"
+                         alt="Kajabi">
+                </div>
+                <p>Kajabi</p>
+            </div>
+
+            <!-- Zoom -->
+            <div class="tool-item">
+                <div class="tool-icon zoom">
+                    <img src="https://cdn.simpleicons.org/zoom/0B5CFF"
+                         alt="Zoom">
+                </div>
+                <p>Zoom</p>
+            </div>
+
+            <!-- Discord -->
+            <div class="tool-item">
+                <div class="tool-icon discord">
+                    <img src="https://cdn.simpleicons.org/discord/5865F2"
+                         alt="Discord">
+                </div>
+                <p>Discord</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY WORK WITH ME + FAQ ================= -->
+
+<section class="why-faq-section">
+
+    <div class="why-faq-container">
+
+        <!-- WHY WORK WITH ME -->
+        <div class="why-section" id="why-me">
+
+            <div class="why-heading">
+                <p class="why-label">WHY WORK WITH ME?</p>
+                <h2>The Person Behind the Work Matters.</h2>
+            </div>
+
+            <div class="qualities-grid">
+
+                <div class="quality-item">
+                    <div class="quality-icon">▧</div>
+                    <h3>Organized</h3>
+                </div>
+
+                <div class="quality-item">
+                    <div class="quality-icon">♙</div>
+                    <h3>Professional</h3>
+                </div>
+
+                <div class="quality-item">
+                    <div class="quality-icon">♡</div>
+                    <h3>Dependable</h3>
+                </div>
+
+                <div class="quality-item">
+                    <div class="quality-icon">▤</div>
+                    <h3>Fast Learner</h3>
+                </div>
+
+                <div class="quality-item">
+                    <div class="quality-icon">◎</div>
+                    <h3>Detail-Oriented</h3>
+                </div>
+
+                <div class="quality-item">
+                    <div class="quality-icon">♧</div>
+                    <h3>Long-Term Mindset</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <div class="faq-section" id="faq">
+
+            <div class="faq-heading">
+                <p class="faq-label">FREQUENTLY ASKED QUESTIONS</p>
+                <h2>Questions, Answered.</h2>
+            </div>
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary>What services do you offer?</summary>
+                    <div class="faq-answer">
+                        I provide virtual assistance, administrative support,
+                        appointment setting, cold calling, lead generation,
+                        data entry, and customer support.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can you work with different time zones?</summary>
+                    <div class="faq-answer">
+                        Yes. I can coordinate schedules across different time
+                        zones based on the agreed working hours and business needs.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can you learn new software?</summary>
+                    <div class="faq-answer">
+                        Absolutely. I'm willing to learn new tools, follow
+                        established workflows, and adapt to your team's systems.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do you only work as a DM Setter?</summary>
+                    <div class="faq-answer">
+                        No. I can also assist with administrative tasks,
+                        lead generation, appointment setting, customer
+                        communication, and operations support.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Are you looking for long-term opportunities?</summary>
+                    <div class="faq-answer">
+                        Yes. I'm interested in building long-term professional
+                        relationships and providing reliable, consistent support.
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT / LET'S CONNECT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <!-- LEFT: HANDWRITTEN MESSAGE -->
+        <div class="contact-decoration">
+            <p>Let's<br>Connect <span>♡</span></p>
+            <div class="contact-line">♡</div>
+        </div>
+
+        <!-- CENTER: CALL TO ACTION -->
+        <div class="contact-message">
+
+            <p class="contact-eyebrow">LET'S WORK TOGETHER</p>
+
+            <h2>You Focus on Growing the Business.</h2>
+
+            <p class="contact-subtitle">
+                I'll help with everything behind the scenes.
+            </p>
+
+            <p class="contact-description">
+                If you're looking for someone who can help with administration,
+                lead generation, appointment setting, cold calling, customer
+                communication, or daily operations — let's talk. I'd love to
+                learn about your business and see where I can help.
+            </p>
+
+        </div>
+
+        <!-- RIGHT: CONTACT DETAILS -->
+        <div class="contact-details">
+
+            <a href="mailto:irikarivaforemostmb@gmail.com"
+               class="contact-button">
+                LET'S CONNECT <span>→</span>
+            </a>
+
+            <a href="mailto:irikarivaforemostmb@gmail.com"
+               class="contact-detail">
+                <span class="contact-icon">✉</span>
+                <span>irikarivaforemostmb@gmail.com</span>
+            </a>
+
+            <a href="tel:09454833096" class="contact-detail">
+                <span class="contact-icon">☏</span>
+                <span>0945 483 3096</span>
+            </a>
+
+            <div class="contact-detail">
+                <span class="contact-icon">♧</span>
+                <span>Philippines | Remote</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+        <!-- Add your Experience, Tools, FAQ, and Contact
+             sections here using matching IDs. -->
 
     </main>
 
 
-    <!-- ================= LOAD HEADER ================= -->
+    <!-- ================= JAVASCRIPT ================= -->
 
     <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
 
-        fetch("HTML/header.html")
-            .then(response => response.text())
-            .then(data => {
+        // Open and close the mobile navigation.
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navMenu.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
 
-                document.getElementById("header").innerHTML = data;
-
-                // Mobile menu
-                const menuToggle =
-                    document.getElementById("menuToggle");
-
-                const navMenu =
-                    document.querySelector(".nav-menu");
-
-                menuToggle.addEventListener("click", () => {
-                    navMenu.classList.toggle("active");
-                });
-
-            })
-            .catch(error => {
-                console.error("Error loading header:", error);
+        // Close the mobile menu after clicking a navigation link.
+        navMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
             });
-
+        });
     </script>
 
 </body>
-
 </html>
-```

@@ -287,3 +287,15 @@ body {
         letter-spacing: 1.5px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
